@@ -56,6 +56,10 @@
   flex-direction: column;
 }
 
+.menu{
+  padding-left: 20px;
+}
+
 .customer-food {
   display: flex;
 }

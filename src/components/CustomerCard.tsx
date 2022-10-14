@@ -34,7 +34,7 @@ export default function CustomerCard({id, name, food}: CustomerCardTypes ){
                   }))
                   setCustomerFoodInput('')
                 }
-                }>Add</button>
+                }>Add Menu</button>
               </div>
             </div>
           </div>

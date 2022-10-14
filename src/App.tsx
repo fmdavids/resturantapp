@@ -34,7 +34,8 @@ function App() {
       <div className="container">
         <div className="reservation-container">
           <div>
-            <h5 className="reservation-header">Reservations</h5>
+            <h4 className="reservation-header">Reservations</h4>
+            <p>Please click name to add menu </p>
             <div className="reservation-cards-container">
             {reservations.map((name, index) => {
               return <ReservationCard name={name} index = {index} />;
@@ -43,10 +44,11 @@ function App() {
           </div>
           <div className="reservation-input-container">
             <input  value={reservationNameInput} onChange={(e) => setReservationNameInput(e.target.value)} />
-            <button onClick={handleAddReservation}>Add</button>
+            <button onClick={handleAddReservation}>Add Name</button>
           </div>
         </div>
         <div className="customer-food-container">
+        <p className="reservation-header menu">Menu List</p>
           { customers.map((customer) => {
             return <CustomerCard id = {customer.id} name = {customer.name} food= {customer.food} />
           })}
